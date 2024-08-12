@@ -1,0 +1,33 @@
+---
+import "../styles.css";
+import Navbar from "../components/Navbar";
+import EventSection from "../components/EventSection";
+import NewsSection from "../components/NewsSection.astro";
+import MahasiswaSection from "../components/MahasiswaSection";
+import StafAndDosenSection from "../components/StafAndDosenSection";
+import Mitradll from "../components/Mitradll";
+import FooterSection from "../components/FooterSection";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		/>
+		<title>Sinergi University</title>
+	</head>
+	<body>
+		<Navbar client:load />
+		<EventSection client:load />
+		<NewsSection />
+		<MahasiswaSection />
+		<StafAndDosenSection />
+		<Mitradll />
+		<FooterSection />
+	</body>
+</html>
